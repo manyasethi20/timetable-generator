@@ -2,10 +2,10 @@
 This is a simple timetable generator made using Flask. It creates procedurally generated generated timetables for the different classes in a semester.
 It uses a HTML based frontend combined with a Flask backend which creates the server for all user interactions. The subjects in a given semester are entered into a subject list which is then randomly placed onto an empty timetable. For Example,
 ```
-given subjects are Math - M, Chemistry - C and DBMS - D, the timetable would be
-                                _ _ _      M D D
-                                _ _ _ >>>> C D M
-                                _ _ _      M M C
+given subjects are Math - M, Chemistry - C and DBMS - D, the generated timetable would be
+                                _ _ _        M D D
+                                _ _ _  >>>>  C D M
+                                _ _ _        M M C
 ```
 Each subject is random selected and placed in priority order, the lab based subjects are given first priority and the theory based subjects are arranged next and so on. The timetables also contain break sessions and free periods for students ;)
 
